@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#1d1d1d;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    overflow-x: hidden;
+}
+
+a,.nav-link, p{
+    color: #fff;
+    position: relative;
+}
+.link-home{
+    font-size: 2rem;
+}
+.mt-41{
+  margin-top: 41px;
+}
+.nav-link,
+nav i{
+    font-size: 1.3rem;
+}
+.nav-link::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background: #4c4445;
+    bottom: 10px;
+    left: 0;
+    transition: .3s;
+}
+.nav-link:hover{
+    color: #F3DD91;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.title-page{
+    margin-bottom: 70px;
+}
+.share-button{
+  background-color: transparent;
+  transition: .3s
+}
+.share-button:hover{
+  color: #F3DD91;
+}
+
+section{
+  position: relative;
+}
+.line img{
+    height: 300px;
+}
+.ml-30{
+    margin-left: -40px;
+}
+.mr-30{
+    margin-right: -40px;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+.hidden {
+    display: none;
+  }
+  
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+  }
+  
+  button, .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #777;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover, .button:hover {
+    border-color: #cdd;
+  }
+  
+  .share-button, .copy-link {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .share-button, .share-dialog {
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+  }
+  
+  .share-dialog {
+    display: none;
+    width: 95%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.15);
+    z-index: -1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .share-dialog.is-open {
+    display: block;
+    z-index: 2;
+  }
+  
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .targets {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .close-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .close-button svg {
+    margin-right: 0;
+  }
+  
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #eee;
+  }
+  
+  .pen-url {
+    margin-right: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .container_para_carrousel{
+    position: relative;
+  }
+  span.bold{
+    color: #F3DD91;
+    font-weight: 700;
+  }
+  .cajados{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 63%;
+    transform: translate(-50%,-50%);
+  }
+@media(max-width:1200px){
+  .ml-30{
+    margin-left: -20px;
+  }
+  .mr-30{
+    margin-right: -20px;
+  }
+  .carousel{
+    width: 300px;
+  }
+  .carousel{
+    margin: auto;
+  }
+    .cajados{
+      left: 67%;
+  }
+}
+
+
+
+
+
+
+@media(min-width:1000px){
+
+  .input-formulario:not(:focus){
+      transition: 1s;
+      width: 0%;
+      opacity: 0;
+  }
+}
+
+@media (max-width:990px){
+
+  .loki-container{
+    position: relative;
+    left: 83px;
+  }
+  .mt-41{
+    margin-top: 41px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+  }
+  .cajados {
+    left: 89%;
+  }
+  
+}
+
+ 
+@media (max-width:768px){
+  .share-button, .share-dialog {
+    bottom: -87px;
+}
+  .loki-container{
+        flex-direction: column;
+        left: -31px;
+  }
+  .line{
+    transform: rotate(90deg);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+    .container__loki{
+      flex-direction: column;
+      align-items: center;
+    }
+    .title-page{
+      text-align: center;
+    }
+
+  .cajados {
+    left: 50%;
+  }
+  .mr-30{
+    margin: 0;
+  }
+  .ml-30{
+    margin: 0;
+  }
+}
